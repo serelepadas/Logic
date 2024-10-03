@@ -27,6 +27,7 @@ int main () {
 		printf ("\nAluno retido por faltas");
 	} else { 	// Se não reprovou por faltas, captura as notas do aluno
 		printf ("\nAluno não estourou por falta");
+		
 		// Calcula a média
 		printf ("\nDigite a nota de p1: ");
 		fflush (stdin); scanf ("%f", &p1);
@@ -37,9 +38,9 @@ int main () {
 		
 		m = (p1 + p2 + t) / 3;
 		
-		printf ("\n\nA média foi = %f ", m );
+		printf ("\n\nA média foi = %.2f ", m ); //%.2f vai mostrar duas casa após a virgula
 		
-		
+		// Verificar se o aluno está: aprovado/retido/IFA
 		if ( m >= 6) {
 			printf ("\n Você foi aprovado, little Padawan");
 		} else {
@@ -51,11 +52,5 @@ int main () {
 		}
 		getch();
 		return 0;
-	}
-	
-	
-	// Verificar se o aluno está: aprovado/retido/IFA
-	
-	
-	
+	}	
 }
